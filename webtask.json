@@ -1,0 +1,17 @@
+{
+  "title": "Change Password with Email or Mobile Verification",
+  "name": "auth0-change-password-email-sms-verification",
+  "version": "1.0.0",
+  "author": "arcseldon",
+  "description": "Email or SMS verification step introduced ahead of change password",
+  "type": "application",
+  "repository": "https://github.com/tawawa/auth0-change-password-email-sms-verificatio.git",
+  "keywords": [
+    "auth0",
+    "sms",
+    "email",
+    "verification",
+    "change password",
+    "webtask"
+  ]
+}

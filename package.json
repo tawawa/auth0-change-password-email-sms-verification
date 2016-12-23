@@ -1,0 +1,46 @@
+{
+  "name": "auth0-change-password-email-sms-verification",
+  "version": "0.0.1",
+  "description": "Change Password with Email or Mobile Verification",
+  "main": "server.js",
+  "scripts": {
+    "start": "wt-bundle server.js -o ./build/bundle.js && node ./build/bundle.js",
+    "bundle": "wt-bundle webtask.js -o ./build/bundle.js",
+    "edit": "wt edit --profile demo-workshop-default password-reset",
+    "update": "wt update --profile demo-workshop-default password-reset build/bundle.js",
+    "deploy": "npm run bundle && npm run update",
+    "create": "wt create --name password-reset --profile demo-workshop-default build/bundle.js",
+    "logs": "wt logs --profile demo-workshop-default"
+  },
+  "keywords": [
+    "auth0",
+    "sms",
+    "email",
+    "verification",
+    "change password",
+    "webtask"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tawawa/auth0-change-password-email-sms-verificatio.git"
+  },
+  "author": "arcseldon",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.1.2",
+    "body-parser": "~1.12.4",
+    "dotenv": "^2.0.0",
+    "express": "4.14.0",
+    "jade": "~1.10.0",
+    "lodash": "^4.8.2",
+    "morgan": "~1.5.3",
+    "nodemailer": "^2.5.0",
+    "q": "^1.4.1",
+    "ramda": "^0.18.0",
+    "request": "^2.67.0",
+    "twilio": "^2.2.1"
+  },
+  "devDependencies": {
+    "webtask-tools": "^3.1.1"
+  }
+}
