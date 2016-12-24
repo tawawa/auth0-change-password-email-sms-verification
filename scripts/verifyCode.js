@@ -39,7 +39,7 @@ var verifyCode = function (config) {
             'content-type': 'application/json',
             authorization: 'Bearer ' + config.USER_UPDATE_MGMT_TOKEN
           },
-          body: {user_metadata: {code: ''}},
+          body: {app_metadata: {code: ''}},
           json: true
         };
         request(options, function (error /*, response, body */) {

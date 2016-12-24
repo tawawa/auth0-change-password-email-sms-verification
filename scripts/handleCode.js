@@ -62,7 +62,7 @@ var handleCode = function (config) {
             'content-type': 'application/json',
             authorization: 'Bearer ' + config.USER_UPDATE_MGMT_TOKEN
           },
-          body: {user_metadata: {code: newCode}},
+          body: {app_metadata: {code: newCode}},
           json: true
         };
         request(options, function (error /*, response, body */) {
