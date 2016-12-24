@@ -13,7 +13,7 @@ var verifyCode = function (config) {
       method: 'GET',
       url: 'https://' + config.TENANT_DOMAIN + '/api/v2/users',
       qs: {
-        q: 'user_metadata.code:"' + code + '" AND identities.connection:"' + config.CONNECTION_NAME + '"',
+        q: 'app_metadata.code:"' + code + '" AND identities.connection:"' + config.CONNECTION_NAME + '"',
         search_engine: 'v2'
       },
       headers: {
