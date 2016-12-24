@@ -5,7 +5,7 @@
   "author": "arcseldon",
   "description": "Email or SMS verification step introduced ahead of change password",
   "type": "application",
-  "repository": "https://github.com/tawawa/auth0-change-password-email-sms-verificatio.git",
+  "repository": "https://github.com/tawawa/auth0-change-password-email-sms-verification.git",
   "keywords": [
     "auth0",
     "sms",
